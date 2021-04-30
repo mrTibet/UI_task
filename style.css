@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+}
+/*header-design*/
+header {
+    width: 961px;
+    border-top: 6px solid #A7C353;
+    margin: 0 auto;
+}
+.header-main{
+    width: 921px;
+    border-bottom: 1px solid #A7C353;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #979797;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 32px 12px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #A7C353;
+    color: #ffff;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    color: #979797;
+}
+.logo span:first-child{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+/*slider section*/
+.wrap-slider {
+    width: 961px;
+    margin: 0 auto;
+}
+.slider-quote {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: #666666;
+}
+.slider {
+    width: 921px;
+    height: 427px;
+    margin: 0 auto;
+}
+.slider-carousel {
+    width: 921px;
+    height: 350px;
+    background-color: #353535;
+    position: relative;
+}
+.overlay {
+    width: 351px;
+    height: 120px;
+    position: absolute;
+    bottom: 35px;
+    right: 62px;
+}
+.overlay-title {
+    background-color: #A7C353;
+    color: #ffff;
+    text-align: center;
+}
+.overlay div p{
+    background-color: #ffff;
+    color: #666666;
+    padding: 14px;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.circle-point {
+    width: 16px;
+    height: 16px;
+    background-color: #A7C353;
+    border-radius: 50%;
+    margin: 4px;
+}
