@@ -1,5 +1,16 @@
 body {
     margin: 0px;
+    
+}
+.wrap-main {
+    background-color: #313131;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header, 
+.wrap-slider, 
+.wrap-content {
+    background-color: #FFFFFF;
 }
 /*header-design*/
 header {
@@ -68,10 +79,21 @@ li a:hover {
     height: 350px;
     background-color: #353535;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-arrows {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-arrows i {
+    color: #A7C353;
 }
 .overlay {
     width: 351px;
-    height: 120px;
+    height: 150px;
     position: absolute;
     bottom: 35px;
     right: 62px;
@@ -98,4 +120,102 @@ li a:hover {
     background-color: #A7C353;
     border-radius: 50%;
     margin: 4px;
+}
+/*wrap-content*/
+.wrap-content {
+    width: 961px;
+    margin: 0 auto;
+}
+
+main{
+    width: 921px;
+    border-top: 2px solid #E2E2E2;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #888888;
+}
+.section {
+    width: 31%;
+}
+.section-link a {
+    color: #A7C353;
+    float: right;
+}
+/*footer*/
+footer {
+    width: 961px;
+    margin: 0 auto;
+    color: #999999;
+}
+footer a{
+    color: #A7C353;
+    text-decoration: none;
+}
+.footer-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    width: 23%;
+}
+.column h4 {
+    color: #FFFFFF;
+}
+.column-info {
+    border-top: solid 2px #3A3A3A;
+}
+.column-info p {
+    margin-bottom: 20px;
+}
+.column-info-icons {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px #3A3A3A;
+}
+.column-info-icons span {
+    margin-right: 10px;
+}
+.column-info-bpost {
+    margin-bottom: 40px;
+}
+.column-info-bpost h4 {
+    margin-bottom: 0px;
+}
+.column-info-bpost h4+p {
+    margin-top: 0px;
+}
+.column-info-bpost a {
+    float: right;
+}
+/*form part*/
+form *{
+    margin: 9px 0px 9px 0px;
+}
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    width: 89%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type='submit']{
+    padding: 11px 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    background-color: #A7C353;
+}
+/*copyright*/
+.footer-copyright {
+    border-top: solid 2px #3A3A3A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
