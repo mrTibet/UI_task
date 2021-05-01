@@ -7,9 +7,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+.wrap-main-white {
+    background-color: #FFFFFF;
+    width: 961px;
+    margin: 0 auto;
+}
 header, 
 .wrap-slider, 
-.wrap-content {
+.wrap-content,
+.wrap-main-white {
     background-color: #FFFFFF;
 }
 /*header-design*/
