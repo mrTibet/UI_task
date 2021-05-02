@@ -1,9 +1,9 @@
 body {
     margin: 0px;
-    
-}
-.wrap-main {
     background-color: #313131;
+}
+
+.wrap-main {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -11,12 +11,6 @@ body {
     background-color: #FFFFFF;
     width: 961px;
     margin: 0 auto;
-}
-header, 
-.wrap-slider, 
-.wrap-content,
-.wrap-main-white {
-    background-color: #FFFFFF;
 }
 /*header-design*/
 header {
@@ -74,6 +68,7 @@ li a:hover {
     font-size: 22px;
     font-style: italic;
     color: #666666;
+    margin: 40px;
 }
 .slider {
     width: 921px;
@@ -84,6 +79,10 @@ li a:hover {
     width: 921px;
     height: 350px;
     background-color: #353535;
+    background-image: url(/UI_task/img/cute-funny-cat-wallpapers-image-download-【2018】.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     align-items: center;
@@ -96,6 +95,10 @@ li a:hover {
 }
 .slider-arrows i {
     color: #A7C353;
+}
+.slider-arrows i:hover {
+    color: #ffff;
+    cursor: pointer;
 }
 .overlay {
     width: 351px;
@@ -127,6 +130,12 @@ li a:hover {
     border-radius: 50%;
     margin: 4px;
 }
+
+.circle-point:hover {
+    border: 2px solid #A7C353;
+    background-color: #ffff;
+    cursor: pointer;
+}
 /*wrap-content*/
 .wrap-content {
     width: 961px;
@@ -143,10 +152,47 @@ main{
 }
 .section {
     width: 31%;
+    margin-bottom: 40px
 }
-.section-link a {
+.section a{
+    text-decoration: none;
     color: #A7C353;
     float: right;
+    align-self: flex-end;
+}
+.section-service {
+    display: flex;
+    align-items: flex-start;
+}
+.section-service div * {
+    margin: 0px 0px 10px 0px;
+}
+/*images*/
+.section-service img{
+    margin-right: 10px;
+}
+.section-img-big{
+    width: 270px;
+    height: 140px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.section-img-small {
+    width: 64px;
+    height: 64px;
+}
+
+.section-link  {
+    float: right;
+}
+.section-tommy div{
+    display: flex;
+}
+.section-tommy div:last-child {
+    flex-direction: column;
+}
+.section-tommy div p{
+    margin-top: 0px;
 }
 /*footer*/
 footer {
@@ -182,6 +228,11 @@ footer a{
 }
 .column-info-icons span {
     margin-right: 10px;
+    font-size: 24px;
+}
+.column-info-icons i:hover {
+    background-color: #ffff;
+    cursor: pointer;
 }
 .column-info-bpost {
     margin-bottom: 40px;
@@ -209,6 +260,7 @@ input[type="email"] {
 textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 8px;
 }
 input[type='submit']{
     padding: 11px 12px;
@@ -217,6 +269,10 @@ input[type='submit']{
     border-radius: 6px;
     border: none;
     background-color: #A7C353;
+}
+input[type='submit']:hover {
+    background-color:#6fc353;
+    cursor: pointer;
 }
 /*copyright*/
 .footer-copyright {
