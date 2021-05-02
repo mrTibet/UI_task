@@ -60,6 +60,9 @@ li a:hover {
     background-color: #A7C353;
     color: #ffff;
 }
+.close {
+    display: none;
+}
 .logo {
     display: flex;
     flex-direction: column;
@@ -307,7 +310,8 @@ input[type='submit']:hover {
 }
 /*footer*/
 @media screen and (max-width: 800px){
-    .bars {
+    .bars,
+    .close {
         display: block;
     }
     /*creation of overlay*/
@@ -321,7 +325,7 @@ input[type='submit']:hover {
         right: 0;
         bottom: 0;
         position: fixed;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.8);
     }
     
     li {
@@ -363,4 +367,10 @@ input[type='submit']:hover {
     .footer-copyright {
         flex-wrap: wrap;
     }
+}
+.active {
+    display: block;
+}
+.passive {
+    display: none;
 }
