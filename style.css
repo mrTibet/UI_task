@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: #313131;
-    font-family: "Georgia, serif";
+    font-family: "Georgia Regular, serif";
 }
 
 .wrap-main {
@@ -55,7 +55,7 @@ li a {
     color: #979797;
     text-align: center;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     padding: 32px 12px;
     text-decoration: none;
 }
@@ -88,9 +88,6 @@ li:nth-child(2) a {
     letter-spacing: 0.031em;
     font-style: normal;
 }*/
-.logo span:last-of-type {
-    
-}
 
 .logo div {
     font-size: 32px;
@@ -171,15 +168,15 @@ li:nth-child(2) a {
     padding-top: 7px;
 }
 .overlay-parag {
-    width: 350px;
-    height: 68px;   
+    /*width: 350px;
+    height: 68px; */  
     background-color: #ffff;
     color: #999999;
-    font-size: 14px;
-    padding: 7px;
+    font-size: 13px;
+    padding: 14px;
 }
 .overlay-parag p{
-    margin: 7px;
+    margin: 0px;
 }
 .circle {
     display: flex;
@@ -215,16 +212,17 @@ main{
     display: flex;
     justify-content: space-between;
     color: #999999;
-    font-size: 14px;
+    font-size: 13px;
     text-align: left;
 }
 .section {
-    width: 31%;
+    width: 30.4%;
     margin-bottom: 40px
 }
 h2 {
     font-weight: 400;
     color: #666666;
+    font-size: 22px;
 }
 .section a{
     text-decoration: none;
@@ -232,6 +230,15 @@ h2 {
     float: right;
     align-self: flex-end;
 }
+.section a:hover {
+    text-decoration: underline;
+}
+.section a:active  {
+    color: black;
+}
+/*.section a:visited  {
+    color: purple;
+}*/
 .section-service {
     display: flex;
     align-items: flex-start;
@@ -241,6 +248,7 @@ h2 {
     margin: 0px;
 }
 .section-service-text h4 {
+    font-size: 14px;
     margin-bottom: 5px;
 }
 /*images*/
@@ -270,14 +278,20 @@ h2 {
 .section-tommy-fdiv{
     display: flex;
     align-items: center;
+    font-size: 16px;
+    color: #989898;
 }
 .section-tommy-fdiv span:nth-child(2){
-    font-weight: bold;
+    font-weight: 400;
     padding-right: 4px;
     padding-left: 11px;
 }
+.section-tommy-fdiv span:nth-child(3){
+    font-weight: 100;
+}
 .section-tommy-sdiv p{
     margin: 0px 0px 9px 0px;
+    color: #888888;
 }
 
 /*footer*/
@@ -285,82 +299,122 @@ footer {
     width: 80.08%;
     margin: 0 auto;
     color: #999999;
+    font-size: 12px;
 }
 footer a{
     color: #A7C353;
     text-decoration: none;
 }
+footer a:hover {
+    text-decoration: underline;
+}
+  
+footer a:active {
+    color: black;
+}
+  
+/*footer a:visited {
+    color: purple;
+}*/
 .footer-columns {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .column {
-    width: 23%;
+    width: 23.41%;
 }
 .column h3 {
     color: #FFFFFF;
     font-weight: normal;
+    font-size: 16px;
 }
 .column-info {
     border-top: solid 2px #3A3A3A;
 }
-.column-info p {
+.column-info-company {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
+/*.column-info p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}*/
 .column-info-icons {
     display: flex;
     align-items: center;
     border-bottom: solid 2px #3A3A3A;
 }
+.icon-block{
+    display: flex;
+    margin-top: 16px;
+}
 .column-info-icons span {
     margin-right: 10px;
-    font-size: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #383838;
 }
 .column-info-icons i:hover {
-    background-color: #ffff;
+    /*background-color: #ffff;*/
     cursor: pointer;
 }
 .column-info-bpost {
     margin-bottom: 40px;
 }
 .column-info-bpost h4 {
-    margin-bottom: 0px;
+    margin-bottom: 7px;
+    font-size: 13px;
 }
 .column-info-bpost h4+p {
     margin-top: 0px;
+    font-size: 11px;
 }
 .column-info-bpost a {
     float: right;
+    margin: 2px;
 }
 /*form part*/
+form{
+    margin-top: 20px;
+}
 form *{
-    margin: 9px 0px 9px 0px;
+    margin-bottom: 9px;
     color: #989898;
 }
 input[type="text"],
 input[type="email"] {
-    padding: 8px;
-    width: 89%;
+    font-size: 13px;
+    padding: 7px;
+    width: 94%;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     background-color: #383838;
 }
 textarea {
     border: none;
-    border-radius: 4px;
-    padding: 8px;
-    width: 89%;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 13px;
+    width: 94%;
     background-color: #383838;
 }
 input[type='submit']{
-    padding: 11px 12px;
     font-size: 13px;
+    font-weight: bold;
     color: #313131;
+    padding: 8px 12px;
+    border-radius: 7px;
+    background-color: #a7c353;
     text-transform: uppercase;
-    border-radius: 6px;
+    font-family: "Georgia";
     border: none;
-    background-color: #A7C353;
+    
 }
 input[type='submit']:hover {
     background-color:#6fc353;
