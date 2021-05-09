@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: #313131;
-    font-family: "Georgia Regular, serif";
+    font-family: "Georgia";
 }
 
 .wrap-main {
@@ -77,23 +77,23 @@ li:nth-child(2) a {
 .logo {
     display: flex;
     flex-direction: column;
-    color: #666666;
 }
-
-/*.logo span:last-of-type {
-    margin-top: -8px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.3;
-    letter-spacing: 0.031em;
-    font-style: normal;
-}*/
 
 .logo div {
     font-size: 32px;
-    text-transform: uppercase;
-    color: #999999;
+    color: #666666;
+    font-family: "Georgia";
+    /*text-transform: uppercase;*/
 }
+.underlogo {
+    font-size: 12px;
+    color: #999;
+    margin: -5px 0px 0px 0px;
+    line-height: 12px;
+    font-family: 'Georgia';
+    letter-spacing: 0.032em;
+}
+
 
 .logo div span:nth-child(2){
     font-variant: small-caps;
@@ -360,7 +360,7 @@ footer a:active {
     height: 32px;
     background-color: #383838;
 }
-.column-info-icons i:hover {
+.column-info-icons span:hover {
     /*background-color: #ffff;*/
     cursor: pointer;
 }
@@ -395,6 +395,7 @@ input[type="email"] {
     border: none;
     border-radius: 7px;
     background-color: #383838;
+    font-family: "Georgia Regular, serif";
 }
 textarea {
     border: none;
@@ -403,6 +404,17 @@ textarea {
     font-size: 13px;
     width: 94%;
     background-color: #383838;
+    font-family: "Georgia Regular, serif";
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    -moz-outline: none;
+    -webkit-outline:none;
+    -ms-outline:none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #989898;
 }
 input[type='submit']{
     font-size: 13px;
@@ -417,7 +429,7 @@ input[type='submit']{
     
 }
 input[type='submit']:hover {
-    background-color:#6fc353;
+    background-color:#D3B138;
     cursor: pointer;
 }
 /*copyright*/
