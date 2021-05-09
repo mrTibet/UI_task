@@ -233,9 +233,9 @@ h2 {
 .section a:active  {
     color: black;
 }
-/*.section a:visited  {
+.section a:visited  {
     color: purple;
-}*/
+}
 .section-service {
     display: flex;
     align-items: flex-start;
@@ -314,9 +314,9 @@ footer a:active {
     color: black;
 }
   
-/*footer a:visited {
+footer a:visited {
     color: purple;
-}*/
+}
 .footer-columns {
     width: 100%;
     display: flex;
