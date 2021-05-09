@@ -1,16 +1,10 @@
-let bar = document.querySelector('.bars'),
-    closeMenu = document.querySelector('.close'),
-    menu = document.querySelector('.menu')
+let closeMenu = document.querySelector('.close'),
+    list = document.querySelectorAll('li'),
+    logo = document.querySelector('.logo'),
+    header = document.querySelector('.header-main')
 
-//overlay menu
+closeMenu.addEventListener('click', function (){
+  list.forEach(el=>el.classList.toggle('active'))
+  header.classList.toggle('menu-part')
+});
 
-function openClose(){
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
-}
-
-bar.addEventListener('click', openClose)
-closeMenu.addEventListener('click', openClose)
